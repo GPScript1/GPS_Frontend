@@ -1,4 +1,4 @@
-import { CustomerPage } from '@/views/customerPage/CustomerPage';
+import  {CustomerPage } from '@/views/customerPage/CustomerPage';
 
 export default function Customer() {
 

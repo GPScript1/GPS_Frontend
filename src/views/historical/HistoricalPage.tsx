@@ -10,7 +10,7 @@ export const HistoricalPage = () => {
 
     return (
         <>
-            <h2 className="text-2xl font-bold mb-4">Ventas Generadas Meses Anteriores</h2>
+            <h2 className="text-1xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Ventas Generadas Meses Anteriores</h2>
             {clientes.length > 0 ? (
                 <ScatterChart data={clientes} />
             ) : (
