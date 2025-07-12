@@ -29,11 +29,6 @@ const items = [
     url: "/historical",
     icon: BarChart3,
   },
-  {
-    title: "Opciones",
-    url: "#",
-    icon: Settings,
-  },
 ]
 
 
