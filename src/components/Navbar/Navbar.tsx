@@ -1,11 +1,10 @@
-import { Calendar, Home, Users, BarChart3, Settings } from "lucide-react"
+import { Home, Users, BarChart3, Settings } from "lucide-react"
  
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
   SidebarHeader,
-  SidebarFooter,
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
@@ -17,17 +16,17 @@ import {
 const items = [
   {
     title: "Inicio",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
     title: "Clientes",
-    url: "#",
+    url: "/customer",
     icon: Users,
   },
   {
     title: "Histórico",
-    url: "#",
+    url: "/historical",
     icon: BarChart3,
   },
   {
@@ -37,21 +36,6 @@ const items = [
   },
 ]
 
-{
-    /*
-        ICONOS DISPONIBLES
-        Users, User, UserCheck, UserPlus, UsersRound, Contact
-
-        BarChart3, BarChart, LineChart, PieChart, TrendingUp, Activity
-
-        Home, House, Dashboard, Layout
-
-        Settings, Cog, Wrench, Sliders, Menu
-
-        FileText, Database, Calendar, Search, Bell, Mail, 
-        CreditCard, DollarSign, Calculator, Briefcase
-    */
-}
 
 export function Navbar() {
   return (

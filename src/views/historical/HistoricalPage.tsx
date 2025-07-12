@@ -4,13 +4,13 @@ import ScatterChart from "@/components/ScatterChart/ScatterChart";
 import { ClienteCluster } from "@/interfaces/ClienteCluster";
 import { useState } from "react";
 
-export const CustomerPage = () => {
+export const HistoricalPage = () => {
     const [clientes] = useState<ClienteCluster[]>([]);
     
 
     return (
         <>
-            <h2 className="text-2xl font-bold mb-4">Segmentación de Clientes por Riesgo</h2>
+            <h2 className="text-2xl font-bold mb-4">Ventas Generadas Meses Anteriores</h2>
             {clientes.length > 0 ? (
                 <ScatterChart data={clientes} />
             ) : (
