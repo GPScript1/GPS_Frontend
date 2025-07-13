@@ -1,7 +1,6 @@
 export interface ClienteCluster {
   nombreCliente: string;
+  diasDemoraPredicho: number;
   promedioInicioFacturaFinPagado: number;
-  promedioInicioComFinPagado: number;
   categoriaRiesgo: string;
-  color: string;
 }

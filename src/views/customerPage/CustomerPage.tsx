@@ -7,6 +7,7 @@ import { ForecastCard } from "@/components/ForecastCard/ForecastCard";
 import { MonthlySalesChart } from "@/components/MonthlySalesChart/MonthlySalesChart";
 import { VentasData } from "@/interfaces/VentasData";
 import { ApiBackend } from "@/clients/axios"; // ✅ debe ir aquí
+import { RiskTable } from '../../components/RiskTable/RiskTable';
 
 export const CustomerPage = () => {
   const [ventasData, setVentasData] = useState<VentasData | null>(null);
@@ -37,15 +38,18 @@ export const CustomerPage = () => {
   }, []);
 
   return (
-    <div className="space-y-8">
-      <h2 className="text-1xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Segmentación de Clientes por Riesgo</h2>
-      <ClientSearch />
+    <div className="p-6 space-y-8">
+      <h2 className="text-1xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Análisis de Clientes</h2>
+      
       <ForecastCard monto={montoForecast} />
       {ventasData ? (
         <MonthlySalesChart data={ventasData} />
       ) : (
         <p className="text-gray-500">Cargando gráfico...</p>
       )}
+
+      <ClientSearch />
+      <RiskTable />
     </div>
   );
 };

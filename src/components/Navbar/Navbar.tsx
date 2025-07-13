@@ -42,16 +42,16 @@ export function Navbar() {
     >
       {/* HEADER: LOGO Y TITULO */}
       <SidebarHeader style={{ backgroundColor: 'var(--insecap-primary)' }}>
-        <div className="flex items-center gap-2 py-2">
+        <div className="flex items-center gap-2 py-6">
             
           {/* LOGO */}
-          <div className="group-data-[collapsible=icon]:none flex h-8 w-8 items-center justify-center rounded-lg">
-            <img src="Insecap_Logo-09.png" alt="Logo" className="h-10 w-10" />
+          <div className="group-data-[collapsible=icon]:none flex h-15 w-15 items-center justify-center rounded-lg">
+            <img src="Insecap_Logo-09.png" alt="Logo" className="h-15 w-15 group-data-[collapsible=icon]:h-10 group-data-[collapsible=icon]:w-10 transition-all duration-200" />
           </div>
           {/* TÍTULO */}
           <div className="group-data-[collapsible=icon]:hidden">
-            <p className="text-sm font-semibold text-white ">INSECAP GPS</p>
-            <p className="text-xs" style={{ color: 'var(--insecap-secondary)' }}>Predictor Financiero</p>
+            <p className="text-lg font-semibold text-white ">INSECAP</p>
+            <p className="text-ms" style={{ color: 'var(--insecap-secondary)' }}>Predictor Financiero</p>
           </div>
         </div>
       </SidebarHeader>
